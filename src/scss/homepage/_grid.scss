@@ -8,7 +8,7 @@
   &__element {
     padding: 1rem;
     aspect-ratio: 1;
-    background-color: transparentize(v.$bar-color-lower, 0.2);
-    border: 1px solid v.$bar-color-lower;
+    background-color: transparentize(darken(v.$bar-color-lower, 10%), 0.2);
+    border: 1px solid darken(v.$bar-color-lower, 10%);
   }
 }
