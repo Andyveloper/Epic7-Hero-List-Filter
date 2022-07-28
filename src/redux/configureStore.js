@@ -1,5 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { config } from 'npm';
+import elements from './apiElementList';
+import heroes from './apiHeroList';
 
 const store = configureStore({
   reducer: {

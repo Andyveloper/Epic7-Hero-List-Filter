@@ -1,0 +1,19 @@
+@use 'mixins' as m;
+@use 'variables' as v;
+
+.navbar {
+  @include m.gill-sans-weigth(300);
+  background-color: v.$bar-color;
+
+  &__items {
+    @include m.flex-direction-justify(row, space-between);
+
+    span {
+      padding-left: 1rem;
+    }
+    &__icons > i {
+      padding-right: 1rem;
+    }
+  }
+
+}
