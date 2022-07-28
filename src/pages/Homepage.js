@@ -4,7 +4,9 @@ import Header from '../components/Header';
 const Homepage = () => (
   <>
     <Header />
-    <Card />
+    <section className="grid-container">
+      <Card />
+    </section>
   </>
 );
 

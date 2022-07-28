@@ -1,0 +1,14 @@
+@use 'mixins' as m;
+@use 'variables' as v;
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: relative;
+  &__element {
+    padding: 1rem;
+    aspect-ratio: 1;
+    background-color: transparentize(v.$bar-color-lower, 0.2);
+    border: 1px solid v.$bar-color-lower;
+  }
+}

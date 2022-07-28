@@ -2,7 +2,6 @@
 @use 'variables' as v;
 
 .header {
-  @include m.gill-sans-weigth(500);
 
   &__container {
     background-color: transparentize(v.$bg-black, 0.2);
@@ -11,6 +10,7 @@
     &__icon {
       width: 46.5%;
       z-index: 1;
+      animation: heroMove 8s infinite running;
     }
     &__logo {
       img {
@@ -19,13 +19,17 @@
       }
     }
   }
-  &__description {
-    background-color: v.$bar-color;
-    z-index: 2;
-    p {
-      line-height: 1.3;
-      padding-left: 1rem;
-    }
+}
+
+.header__description {
+  @include m.gill-sans-weigth(300);
+
+  background-color: v.$bar-color-lower;
+  z-index: 2;
+  p {
+    line-height: 1.3;
+    padding: 0.5rem 1rem;
+    color: #fff;
   }
 }
 
@@ -37,5 +41,14 @@
     position: fixed;
     z-index: -1;
     width: 100%;
+  }
+}
+
+@keyframes heroMove {
+  0% {
+    transform: rotate(0)
+  }
+  50% {
+    transform: rotate(-2deg)
   }
 }

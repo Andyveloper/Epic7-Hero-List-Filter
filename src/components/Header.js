@@ -30,10 +30,10 @@ const Header = () => (
           <img src={Logo} alt="Epic seven logo" />
         </div>
       </div>
-      <div className="header__description">
-        <p>HEROES BY ELEMENT</p>
-      </div>
     </header>
+    <div className="header__description">
+      <p>HEROES BY ELEMENT</p>
+    </div>
   </>
 );
 export default Header;
