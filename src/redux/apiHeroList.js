@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { createAsyncThunk } from '@reduxjs/toolkit';
 
 const apiUrl = 'https://api.epicsevendb.com';
 
@@ -10,14 +11,28 @@ export const apiStatus = async () => {
   return false;
 };
 
-const heroes = async (status = apiStatus()) => {
-  if (status) {
-    const response = await axios.get(`${apiUrl}/hero`);
-    const heroList = response.data.results;
-    return heroList;
-  }
-
-  return false;
+const pushHeroes = (data) => {
+  const heroes = data.map((element) => ({
+    id: element.id,
+    name: element.name,
+    attribute: element.attribute,
+    role: element.role,
+    icon: element.assets.icon,
+    zodiac: element.zodiac,
+  }));
+  return heroes;
 };
 
-export default heroes;
+const getHeroes = createAsyncThunk(
+  'heroes/heroes',
+  async (status = apiStatus()) => {
+    if (status) {
+      const response = await axios.get(`${apiUrl}/hero`);
+      return pushHeroes(response.data.results);
+    }
+
+    return false;
+  },
+);
+
+export default getHeroes;
