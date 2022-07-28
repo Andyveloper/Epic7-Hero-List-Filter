@@ -1,16 +1,25 @@
+import axios from 'axios';
+import { createAsyncThunk } from '@reduxjs/toolkit';
+import { apiStatus } from './apiHeroList';
+
+const apiUrl = 'https://api.epicsevendb.com';
+
 export const pushElements = (data) => {
   const elements = [];
   for (let i = 0; i < data.length; i += 1) {
     if (!elements.includes(data[i].attribute)) { elements.push(data[i].attribute); }
   }
-  console.log(elements);
+  return elements;
 };
 
-const elements = async () => {
-  const apiUrl = 'https://api.epicsevendb.com';
-  const response = await fetch(`${apiUrl}/hero`, { method: 'GET' });
-  const data = await response.json();
-  console.log(data.results);
-  return pushElements(data.results);
-};
-export default elements;
+const getElements = createAsyncThunk(
+  'elements/elements',
+  async (status = apiStatus()) => {
+    if (status) {
+      const response = await axios.get(`${apiUrl}/hero`);
+      return pushElements(response.data.results);
+    }
+    return false;
+  },
+);
+export default getElements;

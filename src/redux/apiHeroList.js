@@ -11,15 +11,12 @@ export const apiStatus = async () => {
 };
 
 const heroes = async (status = apiStatus()) => {
-  try {
-    if (status) {
-      const response = await axios.get(`${apiUrl}/hero`);
-      const heroList = response.data.results;
-      return heroList;
-    }
-  } catch (error) {
-    console.log(error);
+  if (status) {
+    const response = await axios.get(`${apiUrl}/hero`);
+    const heroList = response.data.results;
+    return heroList;
   }
+
   return false;
 };
 
