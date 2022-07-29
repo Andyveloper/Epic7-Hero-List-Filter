@@ -38,9 +38,9 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-Microverse
-Design Idea: [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio).
-E7 DataBase Api: [Raphael Oliveira](https://www.linkedin.com/in/raphaelddl/?locale=en_US)
+- Microverse
+- Design Idea: [Nelson Sakwa](https://www.behance.net/sakwadesignstudio).
+- E7 DataBase Api: [Raphael Oliveira](https://www.linkedin.com/in/raphaelddl/?locale=en_US)
 
 ## 📝 License
 
