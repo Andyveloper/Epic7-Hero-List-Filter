@@ -3,23 +3,25 @@
 
 .navbar {
   @include m.gill-sans-weigth(300);
+
   background-color: v.$bar-color;
 
   &__items {
     @include m.flex-direction-justify(row, space-between);
+
     color: v.$title-color;
 
     span {
-      padding-left: 1rem;
       line-height: 2;
       padding: 0.5rem 1rem;
     }
+
     &__icons > i {
       padding-right: 1rem;
     }
   }
-
 }
+
 .mini-logo {
   width: 7%;
 }

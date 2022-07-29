@@ -2,7 +2,7 @@
 
 @mixin gill-sans-weigth($weight) {
   font-family: 'Gill Sans', sans-serif;
-  font-weight: $weight;                                         
+  font-weight: $weight;
 }
 
 @mixin flex-direction-justify($direction, $justify) {

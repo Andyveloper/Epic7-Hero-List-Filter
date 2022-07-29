@@ -1,18 +1,18 @@
 # Project Name
 
-- Bookstore CMS
+- Epic Seven Hero List
 
 ## Project Website (Netlify)
 
-https://zeraltz-bookstore.netlify.app/
+Coming Soon
 
 ## Clone the Project
 
-- `git clone - https://github.com/Zeraltz/Bookstore.git`
+- `git clone - https://github.com/Zeraltz/metrics-webapp.git`
 
 ## Built With
 
-- HTML, SCSS, JavaScript, React, Webpack
+- HTML, SCSS, JavaScript, React.JS, Redux.
 - VSCode
 
 ## Getting Started
@@ -39,6 +39,8 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 Microverse
+Design Idea: [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio).
+E7 DataBase Api: [Raphael Oliveira](https://www.linkedin.com/in/raphaelddl/?locale=en_US)
 
 ## 📝 License
 
