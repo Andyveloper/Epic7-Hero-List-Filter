@@ -21,6 +21,7 @@ const Card = (props) => {
               src={WIND}
               className="grid-container__element__icon"
               alt="Element Icon"
+              value="wind"
             />
           )
           : null}
@@ -30,6 +31,7 @@ const Card = (props) => {
               src={LIGHT}
               className="grid-container__element__icon"
               alt="Element Icon"
+              value="light"
             />
           )
           : null}
@@ -39,6 +41,7 @@ const Card = (props) => {
               src={DARK}
               className="grid-container__element__icon"
               alt="Element Icon"
+              value="dark"
             />
           )
           : null}
@@ -48,6 +51,7 @@ const Card = (props) => {
               src={FIRE}
               className="grid-container__element__icon"
               alt="Element Icon"
+              value="fire"
             />
           )
           : null}
@@ -57,6 +61,7 @@ const Card = (props) => {
               src={ICE}
               className="grid-container__element__icon"
               alt="Element Icon"
+              value="ice"
             />
           )
           : null}

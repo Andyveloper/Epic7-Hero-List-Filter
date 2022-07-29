@@ -1,5 +1,5 @@
 import { nanoid } from '@reduxjs/toolkit';
-import { useSelector } from 'react-redux/es/exports';
+import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import Card from '../components/Card';
 

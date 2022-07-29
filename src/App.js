@@ -1,11 +1,16 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './scss/App.scss';
 import { useDispatch } from 'react-redux';
-
 import { useEffect } from 'react';
-import Header from './components/Header';
 
+import Header from './components/Header';
 import Homepage from './pages/Homepage';
+import Wind from './pages/Wind';
+import Light from './pages/Light';
+import Dark from './pages/Dark';
+import Fire from './pages/Fire';
+import Ice from './pages/Ice';
+
 import getElements from './redux/apiElementList';
 import getHeroes from './redux/apiHeroList';
 
@@ -22,12 +27,12 @@ function App() {
       <Header />
       <Routes>
         <Route index element={<Homepage />} />
-        <Route path="/home" element={<Homepage />} />
-        <Route path="/wind" element={<Header />} />
-        <Route path="/light" element={<Header />} />
-        <Route path="/dark" element={<Header />} />
-        <Route path="/fire" element={<Header />} />
-        <Route path="/ice" element={<Header />} />
+        <Route exact path="/" element={<Homepage />} />
+        <Route exact path="/wind" element={<Wind />} />
+        <Route exact path="/light" element={<Light />} />
+        <Route exact path="/dark" element={<Dark />} />
+        <Route exact path="/fire" element={<Fire />} />
+        <Route exact path="/ice" element={<Ice />} />
 
       </Routes>
     </BrowserRouter>

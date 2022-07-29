@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Ras from '../assets/images/Ras-e7.png';
 import Logo from '../assets/images/e7-logo.png';
 import myVideo from '../assets/video/e7intro.mp4';
@@ -6,11 +7,13 @@ const Header = () => (
   <>
     <nav className="navbar">
       <div className="navbar__items">
-        <span>
-          <i className="fa-solid fa-chevron-left" />
-          {' '}
-          2015
-        </span>
+        <Link to="/">
+          <span>
+            <i className="fa-solid fa-chevron-left" />
+            {' '}
+            2015
+          </span>
+        </Link>
         <img
           className="mini-logo"
           src="https://assets.epicsevendb.com/website/E7_logo_vector_gradient.svg"
