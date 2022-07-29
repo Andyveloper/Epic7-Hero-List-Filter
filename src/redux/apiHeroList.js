@@ -17,6 +17,7 @@ const pushHeroes = (data) => {
     name: element.name,
     attribute: element.attribute,
     role: element.role,
+    rarity: element.rarity,
     icon: element.assets.icon,
     zodiac: element.zodiac,
   }));

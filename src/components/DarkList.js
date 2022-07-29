@@ -10,19 +10,18 @@ const DarkList = () => {
 
   return (
     <section className="list-container">
-      {filteredList ? filteredList.map((obj) => (
+      {filteredList ? filteredList.map((hero) => (
         <div
-          className={obj.attribute}
+          className={`list-container__item ${hero.attribute}`}
           key={nanoid()}
         >
-          <img src={obj.icon} alt="hero icon" />
+          <img src={hero.icon} alt="hero icon" />
           <h3>
             {' '}
-            {obj.name}
+            {hero.name}
           </h3>
           <div>
-            <p>{obj.rarity}</p>
-            <i className="fa-solid fa-caret-right" />
+            <p>{`${hero.rarity} Stars Hero`}</p>
           </div>
         </div>
       ))
