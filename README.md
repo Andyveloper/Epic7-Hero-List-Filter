@@ -12,19 +12,24 @@ Coming Soon
 
 ## Built With
 
-- HTML, SCSS, JavaScript, React.JS, Redux.
+- HTML
+- SCSS
+- JavaScript
+- React.JS
+- Redux
 - VSCode
 
 ## Getting Started
 
-**This app is used as a tutorial about how to use React properly**
+**This app allows Epic Seven players to filter all heroes by their dedicated element, such element could be either Ice, Fire, Wind, Dark or Light. This allows the player to know what hero he wants before rerolling or summoning heroes in the game. The app is going to be improved with time to also show the description, stats and recomended gear for every hero in the game**
 
 ## Authors
 
-👤 **Author1**
+👤 **Author**
 
 - GitHub: [@Zeraltz](https://github.com/Zeraltz)
 - Twitter: [@MauroCantillo\_](https://twitter.com/MauroCantillo_)
+- LinkedIn: [Mauricio Cantillo](https://www.linkedin.com/in/mauricio-cantillo-moreno)
 
 ## 🤝 Contributing
 
@@ -38,9 +43,9 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Microverse
-- Design Idea: [Nelson Sakwa](https://www.behance.net/sakwadesignstudio).
 - E7 DataBase Api: [Raphael Oliveira](https://www.linkedin.com/in/raphaelddl/?locale=en_US)
+- Design Idea: [Nelson Sakwa](https://www.behance.net/sakwadesignstudio).
+- Microverse
 
 ## 📝 License
 

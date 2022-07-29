@@ -10,10 +10,11 @@
     @include m.flex-direction-justify(row, space-between);
 
     color: v.$title-color;
+    padding: 0.5rem;
 
     span {
       line-height: 2;
-      padding: 0.5rem 1rem;
+      padding: 1rem 1rem;
     }
 
     &__icons > i {
