@@ -1,21 +1,25 @@
 import { nanoid } from '@reduxjs/toolkit';
 import { useSelector } from 'react-redux/es/exports';
+import { Link } from 'react-router-dom';
 import Card from '../components/Card';
-import Header from '../components/Header';
 
 const Homepage = () => {
   const { elements } = useSelector((state) => state.elements);
   const elementList = Object.values(elements);
   return (
     <>
-      <Header />
       <section className="grid-container">
         {elementList ? elementList.map((element, i) => (
-          <Card
+          <Link
+            to={element}
             key={nanoid()}
-            id={i}
-            name={element}
-          />
+          >
+            <Card
+              key={nanoid()}
+              id={i}
+              name={element}
+            />
+          </Link>
         )) : <p>Oops! an error occurred, please try again later</p>}
       </section>
     </>

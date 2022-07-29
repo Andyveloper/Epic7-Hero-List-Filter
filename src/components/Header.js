@@ -11,7 +11,11 @@ const Header = () => (
           {' '}
           2015
         </span>
-        <p>Most Views</p>
+        <img
+          className="mini-logo"
+          src="https://assets.epicsevendb.com/website/E7_logo_vector_gradient.svg"
+          alt="E7 Logo"
+        />
         <div className="navbar__items__icons">
           <i className="fa-solid fa-microphone" />
           <i className="fa-solid fa-gear" />

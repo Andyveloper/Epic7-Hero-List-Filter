@@ -19,6 +19,7 @@ const Card = (props) => {
           ? (
             <img
               src={WIND}
+              className="grid-container__element__icon"
               alt="Element Icon"
             />
           )
@@ -27,6 +28,7 @@ const Card = (props) => {
           ? (
             <img
               src={LIGHT}
+              className="grid-container__element__icon"
               alt="Element Icon"
             />
           )
@@ -35,6 +37,7 @@ const Card = (props) => {
           ? (
             <img
               src={DARK}
+              className="grid-container__element__icon"
               alt="Element Icon"
             />
           )
@@ -43,6 +46,7 @@ const Card = (props) => {
           ? (
             <img
               src={FIRE}
+              className="grid-container__element__icon"
               alt="Element Icon"
             />
           )
@@ -51,14 +55,15 @@ const Card = (props) => {
           ? (
             <img
               src={ICE}
+              className="grid-container__element__icon"
               alt="Element Icon"
             />
           )
           : null}
 
-        <div>
-          <h2>{name.toUpperCase()}</h2>
-          <p>Click to see the list</p>
+        <div className="grid-container__content">
+          <h2 className="grid-container__content__title">{name.toUpperCase()}</h2>
+          <p className="grid-container__content__text">Click to see the list</p>
         </div>
       </article>
 

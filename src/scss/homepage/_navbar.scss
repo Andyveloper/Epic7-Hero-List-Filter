@@ -7,6 +7,7 @@
 
   &__items {
     @include m.flex-direction-justify(row, space-between);
+    color: v.$title-color;
 
     span {
       padding-left: 1rem;
@@ -18,4 +19,7 @@
     }
   }
 
+}
+.mini-logo {
+  width: 7%;
 }

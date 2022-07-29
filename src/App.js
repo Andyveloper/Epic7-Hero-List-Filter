@@ -19,10 +19,15 @@ function App() {
 
   return (
     <BrowserRouter>
+      <Header />
       <Routes>
         <Route index element={<Homepage />} />
         <Route path="/home" element={<Homepage />} />
-        <Route path="/header" element={<Header />} />
+        <Route path="/wind" element={<Header />} />
+        <Route path="/light" element={<Header />} />
+        <Route path="/dark" element={<Header />} />
+        <Route path="/fire" element={<Header />} />
+        <Route path="/ice" element={<Header />} />
 
       </Routes>
     </BrowserRouter>
