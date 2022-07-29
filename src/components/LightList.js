@@ -1,6 +1,6 @@
 import { useSelector } from 'react-redux';
 import { nanoid } from '@reduxjs/toolkit';
-// import { useState } from 'react';
+import { LIGHT } from './Card';
 
 const LightList = () => {
   const { heroes } = useSelector((state) => state.heroes);
@@ -16,11 +16,14 @@ const LightList = () => {
           key={nanoid()}
         >
           <img src={hero.icon} alt="hero icon" />
-          <h3>
-            {' '}
-            {hero.name}
-          </h3>
-          <div>
+          <div className="list-container__item__info">
+            <h3>
+              {' '}
+              {hero.name}
+            </h3>
+            <img className="list-container__item__info-icon" src={LIGHT} alt="element icon" />
+          </div>
+          <div className="list-container__rarity">
             <p>{`${hero.rarity} Stars Hero`}</p>
           </div>
         </div>
