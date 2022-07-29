@@ -9,7 +9,10 @@ const DarkList = () => {
   const filteredList = heroes.filter((obj) => obj.attribute === 'dark');
 
   return (
-    <section className="list-container">
+    <section
+      data-testid="list"
+      className="list-container"
+    >
       {filteredList ? filteredList.map((hero) => (
         <div
           className={`list-container__item ${hero.attribute}`}
@@ -17,14 +20,14 @@ const DarkList = () => {
         >
           <img src={hero.icon} alt="hero icon" />
           <div className="list-container__item__info">
-            <h3>
+            <h3 data-testid="hero-name">
               {' '}
               {hero.name}
             </h3>
             <img className="list-container__item__info-icon" src={DARK} alt="element icon" />
           </div>
           <div className="list-container__rarity">
-            <p>{`${hero.rarity} Stars Hero`}</p>
+            <p data-testid="hero-rarity">{`${hero.rarity} Stars Hero`}</p>
           </div>
         </div>
       ))

@@ -11,6 +11,7 @@ const Card = (props) => {
   return (
     <>
       <article
+        data-testid="card"
         id={id}
         className="grid-container__element"
       >
