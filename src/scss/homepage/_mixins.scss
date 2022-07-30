@@ -1,0 +1,13 @@
+@import url('http://fonts.cdnfonts.com/css/gill-sans');
+
+@mixin gill-sans-weigth($weight) {
+  font-family: 'Gill Sans', sans-serif;
+  font-weight: $weight;
+}
+
+@mixin flex-direction-justify($direction, $justify) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: center;
+}

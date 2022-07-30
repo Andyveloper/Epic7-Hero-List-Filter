@@ -1,0 +1,28 @@
+@use 'mixins' as m;
+@use 'variables' as v;
+
+.navbar {
+  @include m.gill-sans-weigth(300);
+
+  background-color: v.$bar-color;
+
+  &__items {
+    @include m.flex-direction-justify(row, space-between);
+
+    color: v.$title-color;
+    padding: 0.5rem;
+
+    span {
+      line-height: 2;
+      padding: 1rem 1rem;
+    }
+
+    &__icons > i {
+      padding-right: 1rem;
+    }
+  }
+}
+
+.mini-logo {
+  width: 7%;
+}

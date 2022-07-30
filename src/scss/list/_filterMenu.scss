@@ -1,0 +1,33 @@
+@use '../homepage/mixins' as m;
+@use '../homepage/variables' as v;
+
+.filterMenu {
+  @include m.gill-sans-weigth(700);
+  @include m.flex-direction-justify(row, center);
+  border: none;
+  outline: none;
+  background: #fff;
+  appearance: none;
+  border-radius: 1rem;
+  width: 90%;
+  margin: 0.5rem;
+  padding: 1em;
+  font-size: 1rem;
+  color: inherit;
+
+  &:after{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 100%;
+    line-height: 38px;
+    content: '\2228';
+    text-align: center;
+    color: #714BB9;
+    font-size: 24px;
+    border-left: 1px solid #3C1C78;
+    z-index: -1;
+
+  }
+}

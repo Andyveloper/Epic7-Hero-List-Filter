@@ -1,0 +1,36 @@
+@use 'mixins' as m;
+@use 'variables' as v;
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  color: v.$text-color;
+  gap: 0.5rem;
+  margin: 0.5rem;
+
+  @include m.gill-sans-weigth(300);
+
+  &__element {
+    @include m.flex-direction-justify(column, center);
+
+    text-align: center;
+    position: relative;
+    aspect-ratio: 1;
+    background-color: transparentize(darken(v.$bar-color-lower, 10%), 0.2);
+    border: 1px solid darken(v.$bar-color-lower, 10%);
+    border-radius: 1.5rem;
+
+    .fa-caret-right {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+    }
+  }
+
+  &__content__title {
+    @include m.gill-sans-weigth(300);
+
+    font-size: 1.5rem;
+    color: v.$title-color;
+  }
+}
