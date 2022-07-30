@@ -5,6 +5,7 @@ html {
   box-sizing: border-box;
   font-size: 100%;
   overflow-x: hidden;
+  background: fixed no-repeat center center;
   background-image: linear-gradient($gradient-one, $gradient-two );
   background-size: cover;
 }

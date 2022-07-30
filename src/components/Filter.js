@@ -7,6 +7,7 @@ const Filter = (props) => {
       name="category-list"
       id="category-list"
       onChange={handleChange}
+      className="filterMenu"
     >
       <option value="">All</option>
       <option value="wind">Wind</option>
