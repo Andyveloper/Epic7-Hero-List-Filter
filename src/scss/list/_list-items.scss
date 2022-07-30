@@ -1,0 +1,44 @@
+@use '../homepage/mixins' as m;
+@use '../homepage/variables' as v;
+
+.list-container {
+  @include m.gill-sans-weigth(300);
+  
+
+  &__item {
+    @include m.flex-direction-justify(row, space-between);
+
+    color: v.$title-color;
+    background-color: transparentize(v.$bar-color-lower, 0.2);
+    border-radius: 1rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+
+    & > img {
+      padding: 1rem 0 1rem 1rem;
+      width: 20%;
+    }
+
+    &__info {
+      @include m.flex-direction-justify(column, center);
+
+      &-icon {
+        width: 2.5rem;
+      }
+
+      h3 {
+        @include m.gill-sans-weigth(700);
+
+        font-size: 1.1rem;
+        margin: 0;
+      }
+    }
+  }
+
+  &__rarity {
+    p {
+      display: inline-block;
+      padding: 1rem 1rem 1rem 0;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+$gradient-one: #1e2845;
+$gradient-two: #5966ff;
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient($gradient-one, $gradient-two );
+  background-size: cover;
+}
+
+a,
+a:visited,
+a:active,
+a:link {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+
