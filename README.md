@@ -4,7 +4,8 @@
 
 ## Project Website (Netlify)
 
-Coming Soon
+[Web Deployment Netlify](https://zeraltz-epic7-metrics.netlify.app/)
+Disclaimer: Please use the mobile emulation to have a better experience using the app, desktop breakpoints are being developed.
 
 ## Clone the Project
 
@@ -13,6 +14,10 @@ Coming Soon
 ## Screenshots
 
 ![alt text](./src/assets/images/app.jpg)
+
+## Built With
+
+[Loom Video](https://www.loom.com/share/8613229ec9b245e9bd28d17301d0c8e5)
 
 ## Built With
 
