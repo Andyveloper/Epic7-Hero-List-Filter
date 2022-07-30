@@ -47,7 +47,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- E7 DataBase Api: [Raphael Oliveira](https://www.linkedin.com/in/raphaelddl/?locale=en_US)
+- E7 DataBase API: [Raphael Oliveira](https://www.linkedin.com/in/raphaelddl/?locale=en_US)
 - Design Idea: [Nelson Sakwa](https://www.behance.net/sakwadesignstudio).
 - Microverse
 
