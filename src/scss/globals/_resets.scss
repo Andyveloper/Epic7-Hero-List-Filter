@@ -1,3 +1,6 @@
+$gradient-one: #1e2845;
+$gradient-two: #5966ff;
+
 html {
   box-sizing: border-box;
   font-size: 100%;
@@ -13,7 +16,8 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: #0b0c10;
+  background-image: linear-gradient($gradient-one, $gradient-two );
+  background-size: cover;
 }
 
 a,
@@ -27,3 +31,5 @@ a:link {
 li {
   list-style: none;
 }
+
+

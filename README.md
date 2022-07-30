@@ -10,6 +10,10 @@ Coming Soon
 
 - `git clone - https://github.com/Zeraltz/metrics-webapp.git`
 
+## Screenshots
+
+![alt text](./src/assets/images/app.jpg)
+
 ## Built With
 
 - HTML
