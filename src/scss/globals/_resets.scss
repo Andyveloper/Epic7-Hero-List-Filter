@@ -5,6 +5,8 @@ html {
   box-sizing: border-box;
   font-size: 100%;
   overflow-x: hidden;
+  background-image: linear-gradient($gradient-one, $gradient-two );
+  background-size: cover;
 }
 
 *,
@@ -16,8 +18,8 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-image: linear-gradient($gradient-one, $gradient-two );
-  background-size: cover;
+  background-color: none;
+
 }
 
 a,

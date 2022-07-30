@@ -4,6 +4,7 @@ import Logo from '../assets/images/e7-logo.png';
 import myVideo from '../assets/video/e7intro.mp4';
 
 const Header = () => (
+
   <>
     <nav className="navbar">
       <div className="navbar__items">

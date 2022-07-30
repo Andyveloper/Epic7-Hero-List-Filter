@@ -7,6 +7,23 @@ export const FIRE = 'https://img.game8.co/3216719/ae6439723955b90eb47c4c2177898e
 export const WIND = 'https://img.game8.co/3216720/158433589d2408c75881c7d55a6c392b.png/show';
 
 const Card = (props) => {
+  const pickElementIcon = (element) => {
+    switch (element) {
+      case 'wind':
+        return WIND;
+      case 'ice':
+        return ICE;
+      case 'fire':
+        return FIRE;
+      case 'light':
+        return LIGHT;
+      case 'dark':
+        return DARK;
+      default:
+        return '';
+    }
+  };
+
   const { id, name } = props;
   return (
     <>
@@ -19,7 +36,7 @@ const Card = (props) => {
         {id === 0
           ? (
             <img
-              src={WIND}
+              src={pickElementIcon(name)}
               className="grid-container__element__icon"
               alt="Element Icon"
               value="wind"
@@ -29,7 +46,7 @@ const Card = (props) => {
         {id === 1
           ? (
             <img
-              src={LIGHT}
+              src={pickElementIcon(name)}
               className="grid-container__element__icon"
               alt="Element Icon"
               value="light"
@@ -39,7 +56,7 @@ const Card = (props) => {
         {id === 2
           ? (
             <img
-              src={DARK}
+              src={pickElementIcon(name)}
               className="grid-container__element__icon"
               alt="Element Icon"
               value="dark"
@@ -49,7 +66,7 @@ const Card = (props) => {
         {id === 3
           ? (
             <img
-              src={FIRE}
+              src={pickElementIcon(name)}
               className="grid-container__element__icon"
               alt="Element Icon"
               value="fire"
@@ -59,7 +76,7 @@ const Card = (props) => {
         {id === 4
           ? (
             <img
-              src={ICE}
+              src={pickElementIcon(name)}
               className="grid-container__element__icon"
               alt="Element Icon"
               value="ice"
